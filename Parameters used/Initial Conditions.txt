@@ -1,0 +1,10 @@
+p0 36[MPa] "Initial reservoir pressure"
+pw1 0.5[MPa] BHP
+T 338[K] "Reservoir temp (Li et al., 2020)"
+rw 1e-6[m] "Wellbore radius"
+cubic_law 2e9 ""
+Pi 40[MPa] "Injection pressure"
+TOC 0.085 "Our calculated Total organic carbon"
+p01 50[MPa] ""
+pw 0[MPa] ""
+T1 333.15[K] ""

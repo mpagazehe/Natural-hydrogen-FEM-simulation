@@ -1,0 +1,4 @@
+V_E Vsl*exp(-D1*(log(p0/pk1_srd))^n_h) "Excess Dubnin method"
+D1 0.05 "Dubinin constant"
+V_E1 dens_grain*V_E/(Eks*Vstd)*(1-dens_gas_k1/dens_gas_adsorbed) ""
+n_h 1.1831 Constant

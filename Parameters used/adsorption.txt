@@ -1,0 +1,5 @@
+PL1 7.89[MPa] "Langmuir pressure"
+Vstd 22.37[L/mol] "molar volume of gas at standard conditions"
+Vsl1 2.83e-3[m^3/kg] "Langmuir volume"
+PL 30.10[MPa] "Langmuir pressure"
+Vsl 2.60[cm^3/g] "Langmuir volume"

@@ -1,0 +1,8 @@
+cus_ex_srd cus_abb_srd*(1-dens_gas_k1/dens_gas_absorbed) "excessive absorbed gas in the kerogen (Wang Xiukun, Gas sorption and non-Darcy flow in shale reservoirs; Memon Asadullah et al., 2020, Study of gas sorption, stress effects and analysis of effective porosity and permeability for shale gas reservoirs)"
+cus_abb_srd K_coeff*pk1_srd*TOC "absolute absorbed gas in the kerogen"
+sorption_gas_srd cusSRD+cus_ex_srd "Total amount of EXCESSIVE absorbed (dissolved) and adsorbed gas in the kerogen"
+K_coeff 0.052[mol/(MPa*L)] "Henry's constant for dissolved gas"
+sorption_gas_Absol cus_abb_srd+cus_srd "Absolute sorption gas"
+er (dens_grain*(((Vsl*(pk1_srd*M/(Zr_Mahmoud*Rg*T)))/(dens_grain1+(pk1_srd*M/(Zr_Mahmoud*Rg*T))))*(1-(pk1_srd*M/(Zr_Mahmoud*Rg*T))/dens_gas_adsorbed))/(Eks*Vstd)*(1-(pk1_srd*M/(Zr_Mahmoud*Rg*T))/dens_gas_adsorbed))+((K_coeff*pk1_srd*TOC)*(1-(pk1_srd*M/(Zr_Mahmoud*Rg*T))/dens_gas_absorbed)) ""
+sorption_gas_srd1 cusSRD1+cus_ex_srd "Total amount of EXCESSIVE absorbed (dissolved) and adsorbed gas in the kerogen"
+er1 "dens_grain*V_ads_srd/(Eks*Vstd)*(1-pk1_srd*M/(Zr_Mahmoud*Rg*T)/dens_gas_adsorbed) +cus_ex_srd" ""
